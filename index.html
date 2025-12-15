@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+            body {
+                background-color: rgb(30, 30, 30);
+            }
+            h1 {
+  font-family: "Monoton", serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  color: rgb(173, 28, 28);
+}
+h2{
+font-weight: 1400;
+  font-style: normal;
+  text-align: center; 
+  font-size: x-large;
+  color: lime;
+}
+        
+            p {
+  color: rgb(173, 28, 28);
+  text-align: center;
+  padding-left: 50px;
+    padding-right: 50px;
+}
+img{
+    display: block;
+    width: 1500px;
+    margin: auto;
+    padding: 5px 5px 5px;
+}
+video{display: block; 
+    width: 1600px;
+    margin:auto;
+}
+a{
+  display: block; 
+  margin: auto;
+    text-align: center;
+   padding-left: 50px;
+  color: rgb(173, 28, 28);}
+
+.warning img {
+  width: 100%;
+}
+
+.warning p {
+  font: small-caps bold 1.2rem sans-serif;
+  text-align: center;
+}
+
+section {
+  zoom: 0.8;
+  display: flex;
+  margin: auto;
+}
+article {
+  padding: 10px;
+  margin: auto;
+  background: aqua;
+}
+header {
+  background: purple;
+  height: 100px;
+}
+
+.logo img {
+  width: 400px;
+}
+.row {
+  display: flex;
+  border: 10px greenyellow;
+  color: greenyellow;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 10px;
+  color: greenyellow;
+}
+
+.carosel {
+  image-resolution: 500px;
+  display: block;
+  margin: 0 auto;
+    width: 400px;
+    height: 400px;
+}
+
+ul {
+  width: 400px;
+  height: 450px;
+  padding: 0px;
+  display: flex;
+  gap: 4vw;
+  text-align: center;
+  margin-left: 50px;
+}
+li {
+  list-style-type: none;
+  background-color: none;
+  border: 0px solid #dddddd;
+  padding: 0px;
+
+  flex: 0 0 100%;
+}
+
+li:nth-child(even) {
+  background-color: transparent;
+}
+ul {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+li {
+  scroll-snap-align: center;
+}
+
+
+
+        </style>       
+    </head>
+    <body>
+        <h1>LED CUBE PROGRAMMING</h1>
+        <h2>Creative Code</h2>
+        <p>By Reed Axtell</p>
+        <video controls width="1600">
+          
+            <source src="ccproj4.mp4" type="video/mp4" />
+          
+            Download the
+            <a href="/ccproj4.mp4">MP4</a>
+            video.
+          </video>
+    <p>
+　　　　　　　　　　　　　.
+　　　　　　*⠀　　⠀  　　　　　⠀✦⠀　
+　　　　　　*　　　　　　　　　　　　　　　　　　.
+　　　　.　　　　.　　　
+　　　　　　　　　　　.
+　　　　　　　
+　　　˚　　　　　　　　ﾟ　　　　　.
+　.⠀　⠀‍⠀‍⠀‍⠀‍⠀‍⠀‍⠀‍⠀‍⠀‍⠀‍⠀,
+　　　　　✦⠀　   　　　,</p>
+          <h2>
+            Artist Statement
+          </h2>
+                  <p>Through TouchDesigner and FastLED in Arduino IDE, the cube cycles through LED effect libraries, visualizes video input, and displays real time heartbeat data. This project offers a cost-effective way to explore programming 3D LED matrices.
+</p>
+<p>
+　˚　　　　　　　　　　　　　　*
+.⠀ 　　　　　　　　　　.　　　　　　　　.
+　　　　　✦⠀　   　　　,　　    　　　　　　　　.
+⠀⠀⠀⠀⠀⠀.　　　　　　　　　　⠀⠀⠀✦ ⠀ ⠀　　　　　　　　　　　　　　⠀⠀⠀⠀⠀* ⠀⠀⠀.　　　　　　　　　　. ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀✦⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀ ⠀⠀⠀⠀⠀⠀.　　　　　　　　　　　　　.　　　ﾟ .　　　　　　　　　　　　　. 　　　　　　　　　　　　　　　✦ 　　　　　,　　　　　　　.
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+　　　　　　*　　　　　　　　　　　.
+.　　　　　　　　　　　　　. 　　✦⠀　   　　　,　　　　　　　　　*
+　　　　　⠀　　　　⠀　　,
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀.　　　　　 　　⠀　　　⠀.　
+ 　　˚　　　⠀　⠀  　　,　　　　　　.
+　　　　　　　　　　　　　.
+　　　　　　*⠀　　⠀  　　　　　⠀✦⠀　</p>
+                            <h2>
+            Equipment
+          </h2>
+<div class="row">
+<div class="column">
+<ul>
+  <li>
+        <img class="carosel" src="61VtKUkhEdL.jpg"> </img>
+  </li>
+  <li>
+        <img class="carosel" src="cchear.webp"> </img>
+  </li>
+</ul>
+</div>
+<div class="column">
+<ul>
+  <li>
+        <img class="carosel" src="ccard.png"> </img>
+  </li>
+  <li>
+        <img class="carosel" src="plug.webp"> </img>
+    </img>
+  </li>
+</ul>
+</div>
+</div>
+<p>⠀⠀⠀⠀⠀.　　　　　　　　　　⠀⠀⠀✦ ⠀ ⠀　　　　　　　　　　　　　　⠀⠀⠀⠀⠀* ⠀⠀⠀.　　　　　　　　　　. ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀✦⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀ ⠀⠀⠀⠀⠀⠀.　　　　　　　　　　　　　.　　　ﾟ .　　　　　　　　　　　　　. 　　　　　　　　　　　　　　　✦ 　　　　　,　　　　　　　.
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+　　　　　　*　　　　　　　　　　　.
+.　　　　　　　　　　　　　. 　　✦⠀　   　　　,　　　　　　　　　*
+　　　　　⠀　　　　⠀　　,
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀.　　　　　 　　⠀　　　⠀.　
+ 　　˚　　　⠀　⠀  　　,　　　　　　.
+　　　　　　　　　　　　　.
+　　　　　　*⠀　　⠀  　　　　　⠀✦⠀　
+　　　　　　*　　　　　　　　　　　　　　　　　　.
+　　　　.　　　　.　　　⠀
+　　　　　　　　　　　.
+　　　　　　　
+　　　˚　　　　　　　　ﾟ　　　　　.
+　.⠀　　⠀‍⠀‍⠀‍⠀‍⠀‍⠀‍⠀‍⠀‍⠀‍⠀‍⠀,
+　　　*　　⠀.
+　　　　　.　　　　　　　　　　⠀✦
+　˚　　　　　　　　　　　　　　*
+.⠀ 　　　　　　　　　　.　　　　　　　　.
+　　　　　✦⠀　   　　　,　　    　　　　　　　　.
+⠀⠀⠀⠀⠀⠀.　　　　　　　　　　⠀⠀⠀✦ ⠀ ⠀　　　　　　　　　　　　　　⠀⠀⠀⠀⠀* ⠀⠀⠀.　　　　　　　　　　. ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀✦⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀ ⠀⠀⠀⠀⠀⠀.　　　　　　　　　　　　　.　　　ﾟ .　　　　　　　　　　　　　. 　　　　　　　　　　　　　　　✦ 　　　　　,　　　　　　　.
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+　　　　　　*　　　　　　　　　　　.
+.　　　　　　　　　　　　　. 　　✦⠀　   　　　,　　　　　　　　　*
+　　　　　⠀　　　　⠀　　,
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀.　　　　　 　　⠀　　　⠀.　
+ 　　˚　　　⠀　⠀  　　,　　　　　　.
+　　　　　　　　　　　　　.
+　　　　　　*⠀　　⠀  　　　　　⠀✦⠀　
+　　　　　　*　　　　　　　　　　　　　　　　　　.
+　　　　.　　　　.　　　
+　　　　　　　　　　　.
+　　　　　　　
+　　　˚　　　　　　　　ﾟ　　　　　.
+　.⠀　⠀‍⠀‍⠀‍⠀‍⠀‍⠀‍⠀‍⠀‍⠀‍⠀‍⠀,
+　　　　　✦⠀　   　　　,</p>
+          <h2>
+            Tools and References
+          </h2>
+          <a href="https://www.pnas.org/doi/10.1073/pnas.1005766107">PNAS article</a>
+          <a href="https://www.pnas.org/doi/10.1073/pnas.1005766107">PNAS article</a>
+          <a href="https://www.pnas.org/doi/10.1073/pnas.1005766107">PNAS article</a>
+          <a href="https://alltd.org/leds-with-touchdesigner-touchdesigner-tutorial-208/">LEDs with TouchDesigner</a>
+    </body>
+</html>
